@@ -1,0 +1,333 @@
+
+/* ---- GLOBALLY ---- */
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+body {
+  background-color: #fafafa;
+  color: #333533;
+  margin: 0;
+  font-size: 18px;
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 400;
+}
+h5 {
+  margin-bottom: 5px;
+  color: #a0a0a0;
+}
+h6 {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ---- CONTAINERS ---- */
+
+.header,
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0px;
+}
+
+/* ---- HEADER ---- */
+
+.header {
+  background-color: #333533;
+  height: 376px;
+  align-items: center;
+}
+.header .title {
+  margin: 0 50px;
+}
+
+.header .title h1 {
+  color: #ffd100;
+  font-size: 56px;
+  margin: 0;
+  line-height: 1;
+  animation-duration: 1s;
+}
+
+.header .title h1:hover {
+  animation-name: pulse;
+  animation-timing-function: ease-in-out;
+}
+.header .position {
+  color: #fafafa;
+  font-size: 32px;
+  line-height: 1;
+  margin: 40px 0;
+}
+.header i {
+  color: #ffd100;
+}
+.button {
+  color: #ffd100;
+  border: 1px solid #ffd100;
+  border-radius: 4px;
+  padding: 8px 24px;
+}
+
+.button:hover,
+.button:hover i {
+  background-color: #ffd100;
+  color: #333533;
+}
+.lang {
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  opacity: 0.7;
+  align-self: flex-start;
+}
+.lang i {
+  color: #fafafa;
+  opacity: 0.7;
+}
+
+.lang:hover,
+.lang:hover i {
+  opacity: 1;
+}
+.header img {
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  filter: grayscale(1%);
+  transition: filter 0.4s;
+}
+.header img:hover {
+  filter: grayscale(70%);
+}
+
+/* ----- navBAR ----- */
+
+.container nav {
+  width: 250px;
+  font-size: 22px;
+}
+.container nav ul li {
+  cursor: pointer;
+}
+.container nav li.active,
+.container nav li:hover {
+  font-weight: 500;
+}
+.container nav ul li .marker {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #333533;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+.container nav ul li.active .marker,
+.container nav ul li:hover .marker {
+  background-color: #333533;
+  color: #ffd100;
+}
+.container nav ul li:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 48px;
+  cursor: auto;
+}
+
+/* ---- SECTIONS ---- */
+
+.sections {
+  width: 700px;
+}
+.sections section:last-child {
+  width: 880px;
+}
+
+/* ---- ABOUT ME ---- */
+
+.contanct {
+  display: flex;
+}
+.contanct div {
+  width: 50%;
+}
+.contanct p {
+  margin-top: 0;
+}
+.contanct p i {
+  color: #a0a0a0;
+  cursor: pointer;
+}
+.contanct p i:hover {
+  color: #333533;
+}
+.socials li {
+  display: inline-block;
+}
+.socials li span {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  /* background-color: aquamarine; */
+}
+.socials li span.linkedin {
+  background-image: url("../icons/social/linkedin.png");
+}
+.socials li:hover span.linkedin {
+  background-image: url("../icons/social/linkedin-hover.png");
+}
+.socials li span.github {
+  background-image: url("../icons/social/github.png");
+}
+.socials li:hover span.github {
+  background-image: url("../icons/social/github-hover.png");
+}
+.socials li span.stackoverflow {
+  background-image: url("../icons/social/stackoverflow.png");
+}
+.socials li:hover span.stackoverflow {
+  background-image: url("../icons/social/stackoverflow-hover.png");
+}
+.socials li span.twitter {
+  background-image: url("../icons/social/twitter.png");
+}
+.socials li:hover span.twitter {
+  background-image: url("../icons/social/twitter-hover.png");
+}
+.socials li span.telegram {
+  background-image: url("../icons/social/telegram.png");
+}
+.socials li:hover span.telegram {
+  background-image: url("../icons/social/telegram-hover.png");
+}
+.socials li span.whatsapp {
+  background-image: url("../icons/social/whatsapp.png");
+}
+.socials li:hover span.whatsapp {
+  background-image: url("../icons/social/whatsapp-hover.png");
+}
+.socials li span.instagram {
+  background-image: url("../icons/social/instagram.png");
+}
+.socials li:hover span.instagram {
+  background-image: url("../icons/social/instagram-hover.png");
+}
+
+/* ---- SKILLS ---- */
+
+.skills li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px 24px;
+}
+.skills li img {
+  vertical-align: middle;
+}
+.skills li span:first-child {
+  font-weight: 500;
+}
+.skills li i {
+  padding: 10px 12px;
+}
+.other-skills li {
+  border: 1px solid #a0a0a0;
+  border-radius: 24px;
+  display: inline-block;
+  padding: 4px 16px;
+  margin: 0 16px 18px 0;
+}
+
+/* ---- PTOJECTS ---- */
+
+.project {
+  box-sizing: content-box;
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  padding: 11px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.project .title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 12px;
+}
+.project .description {
+  font-size: 14px;
+}
+.project .tech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.project .tech ul li {
+  display: inline-block;
+}
+.project .tech ul li img {
+  width: 25px;
+}
+.project .buttons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.project .buttons a {
+  width: 50%;
+  color: #333533;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+}
+.project .buttons a:last-child {
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+}
+.project .buttons a:first-child:hover {
+  color: #a0a0a0;
+}
+.project .buttons a:last-child:hover {
+  background-color: #333533;
+  color: #fafafa;
+}
+
+.projects {
+  display: flex;
+  gap: 40px 24px;
+  flex-wrap: wrap;
+}
+.mobile-nav {
+  display: none;
+}

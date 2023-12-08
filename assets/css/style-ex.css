@@ -1,0 +1,102 @@
+/*
+body{
+   color: brown;
+}
+
+#about-me{
+    color: cornflowerblue;
+}
+
+.description{
+    color: mediumseagreen;
+}
+
+.pragraph{
+    font-style: italic;
+}
+*/
+
+/*
+ * {
+  color: gray;
+}
+
+h1,
+#about-me,
+.description {
+    color: palevioletred;
+}
+ */
+
+/*
+ ul li {
+  color: lightsalmon;
+}
+
+/* descendant selector */
+/* section img {
+  width: 80px;
+} */
+
+/* child selector: select just child not nave & natije */
+/* section > img {
+    border: 5px solid green;
+    border-radius: 20px;
+} */
+
+/* .first-child + li{
+    color: blueviolet;
+} */
+
+/* .first-child ~ li{
+    color: blueviolet;
+} */
+
+
+/* -----Pseudo-Class Selector----- */
+
+/* a{
+    color: cadetblue;
+    font-size: 20px;
+} 
+
+a:visited{
+    color: blueviolet;
+    font-size: 20px;
+}
+
+a:hover {
+  color: brown;
+  font-size: 20px;
+}
+
+a:active{
+    color: green;
+    font-size: 20px;
+}
+
+li:first-child{
+    color: brown;
+}
+
+li:last-child{
+    color: orchid;
+} */
+
+/* -----Pseudo-Element Selector----- */
+
+/* h1::before{
+    content: "***";
+}
+
+h1::after{
+    content: "$$$";
+}
+
+/* [target]{
+    color: crimson;
+} */
+
+/* [target="_parent"]{
+    color: crimson;
+} */

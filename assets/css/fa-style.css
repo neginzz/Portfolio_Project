@@ -1,0 +1,72 @@
+/* ---- GLOBALLY ---- */
+
+@font-face {
+  font-family: "yekan-bakh";
+  src: url("/assets/fonts/woff2/YekanBakhFaNum-VF.woff2") format("woff2"),
+    url("/assets/fonts/woff/YekanBakhFaNum-VF.WOFF") format("woff"),
+    url("/assets/fonts/ttf/YekanBakh-VF.ttf") format("ttf");
+}
+
+* {
+  font-family: "yekan-bakh", sans-serif;
+}
+
+/* ---- HEADER ---- */
+
+.header i {
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.lang i {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+/* ---- NAVBAR ---- */
+
+.container nav {
+  font-weight: 300;
+}
+
+.container nav ul li .marker {
+  line-height: 43px;
+  margin-left: 12px;
+}
+
+.container nav ul li:not(:last-child)::after {
+  border-right: 1.5px dashed #333533;
+  margin: 16px 21px 16px 0;
+}
+
+/* ---- SECTIONS ---- */
+
+.sections {
+  border-right: 1.5px solid #333533;
+  padding-right: 50px;
+}
+
+/* ---- ABOUT ME ---- */
+
+.contanct p i {
+  margin-right: 10px;
+}
+
+.socials li {
+  margin-left: 24px;
+}
+
+/* ----SKILLS ---- */
+
+.skills li img {
+  margin-left: 8px;
+}
+.skills li i {
+  border-right: 1px solid #a0a0a0;
+}
+
+/* ---- PROJECTS ---- */
+
+.project .buttons a i {
+  margin-left: 5px;
+}

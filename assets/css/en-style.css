@@ -1,0 +1,61 @@
+/* ---- GLOBALLY ---- */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---- HEADER ---- */
+
+.header i {
+  margin-right: 6px;
+}
+
+.lang i {
+  margin-right: 4px;
+}
+
+/* ---- NAVBAR ---- */
+
+.container nav ul li .marker {
+  line-height: 42px;
+  margin-right: 12px;
+}
+
+.container nav ul li:not(:last-child)::after {
+  border-left: 1.5px dashed #333533;
+  margin: 16px 0 16px 21px;
+}
+
+/* ---- SECTIONS ---- */
+
+.sections {
+  border-left: 1.5px solid #333533;
+  padding-left: 50px;
+}
+
+/* ---- ABOUT ME ---- */
+
+
+.contanct p i {
+  margin-left: 10px;
+}
+
+.socials li {
+  margin-right: 24px;
+}
+
+/* ----SKILLS ---- */
+
+.skills li img {
+  margin-right: 8px;
+}
+
+.skills li i {
+  border-left: 1px solid #a0a0a0;
+}
+
+/* ---- PROJECTS ---- */
+
+.project .buttons a i {
+  margin-right: 5px;
+}
